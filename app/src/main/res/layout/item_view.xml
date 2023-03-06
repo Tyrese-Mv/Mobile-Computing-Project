@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corner"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleoutput"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        tools:text="My title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionoutnput"
+        android:layout_below="@id/titleoutput"
+        android:textSize="20dp"
+        android:textColor="#504F4F"
+        tools:text="My Long description"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeoutput"
+        android:layout_below="@id/descriptionoutnput"
+        android:textSize="12dp"
+        android:gravity="end"
+        android:textColor="#E2517A46"
+        tools:text="Aug 10 2021"/>
+
+
+
+</RelativeLayout>

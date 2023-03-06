@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B0FF"
+    tools:context=".MainActivity"
+    >
+    <include
+        layout="@layout/menu_toolbar"
+        android:id="@+id/toolBar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_above="@id/addnewentrybtn"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="20sp"
+
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Entry"
+        android:id="@+id/addnewentrybtn"
+        android:layout_alignParentBottom="true"
+        android:textColor="#00B0FF"
+        android:backgroundTint="@color/white"/>
+
+
+
+
+
+
+</RelativeLayout>
